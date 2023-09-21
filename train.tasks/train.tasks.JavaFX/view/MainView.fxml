@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.MainViewController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F0F8FF;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="6.0" layoutY="14.0" prefHeight="241.0" prefWidth="186.0" spacing="20.0">
+               <children>
+                  <Button fx:id="ToModel" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Modelī" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               
+                  <Button fx:id="circle1" disable="true" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="VienAtoma" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+                  
+                  <Button fx:id="circle2" disable="true" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="DivAtomu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+                  
+                  <Button fx:id="circle3" disable="true" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Trīs Atomu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+                  
+                  <Label fx:id="rightLabel1" prefHeight="29.0" prefWidth="186.0" visible="false">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            
+            <VBox alignment="TOP_CENTER" layoutX="6.0" layoutY="399.0" prefHeight="136.0" prefWidth="186.0" spacing="20.0">
+               <children>
+                  <Button fx:id="theoryBtn" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Teorija" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+                  
+                  <Button fx:id="taskBtn" mnemonicParsing="false" prefHeight="32.0" prefWidth="147.0" style="-fx-background-color: #28739e;" text="Definēt Uzdevumu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+                  
+                  <Button fx:id="exit" mnemonicParsing="false" onAction="#exitBtnAction" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Beigt Darbu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+               </children>
+            </VBox>
+            <Label fx:id="rightLabel3" alignment="TOP_LEFT" layoutX="8.0" layoutY="255.0" prefHeight="33.0" prefWidth="183.0" text="Izvelētais Modelis:" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="rightLabel2" alignment="TOP_LEFT" layoutX="9.0" layoutY="288.0" prefHeight="33.0" prefWidth="183.0" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            
+         </children>
+      </AnchorPane>
+   </left>
+   
+   <right>
+      <AnchorPane prefHeight="549.0" prefWidth="171.0" style="-fx-background-color: #F0F8FF;" BorderPane.alignment="CENTER">
+         <children>
+         
+            <Button fx:id="launch" disable="true" layoutX="18.0" layoutY="32.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Palaist" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow height="15.0" radius="7.0" width="15.0">
+                     <color>
+                        <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+               
+            <Button fx:id="stop" disable="true" layoutX="19.0" layoutY="82.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Apstādināt" textFill="WHITE">
+               <effect>
+                  <DropShadow height="15.0" radius="7.0" width="15.0">
+                     <color>
+                        <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            
+         </children>
+      </AnchorPane>
+   </right>
+   
+   <center>
+      <StackPane fx:id="stackPane" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="theoryPane5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F0F8FF;">
+               <children>
+                  <Button fx:id="backFourthLpp" layoutX="15.0" layoutY="576.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Atpakaļ" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <TextArea editable="false" layoutX="30.0" layoutY="78.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="741.0" style="-fx-background-color: #F0F8FF; -fx-border-color: #F0F8FF; -fx-background-color: transparent;" text="Iekšējo enerģiju var aprēķināt pēc formulas:&#10;U = i pV &#9; vai &#9; U=i(m/M) RT, kur&#10;U — gāzes iekšējā enerģija, J&#10;m — gāzes masa, kg&#10;M — gāzes molmasa, kg/mol&#10;T — gāzes absolūtā temperatūra, K&#10;R= 8,31 J/(mol ∙ K) — universālā gāzu konstante&#10;p – gāzes spiediens, Pa&#10;">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </Pane>
+            <Pane fx:id="theoryPane4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F0F8FF;">
+               <children>
+                  <TextArea editable="false" layoutX="35.0" layoutY="341.0" prefHeight="225.0" prefWidth="730.0" style="-fx-background-color: #F0F8FF; -fx-border-color: #F0F8FF; -fx-background-color: transparent;" text="Vidējās kinētiskās enerģijas izteiksmē esošais skaitlis 3/2 nav nejaušs. &#10;Iegūtā vidējās kinētiskās enerģijas izteiksme ir rakstīta ideālai gāzei. &#10;Ideālu gāzi veido vienatoma molekulas, kuras var uzskatīt par masas punktiem. &#10;No viena atoma sastāvošai molekulai ir iespējamas tikai trīs dažādas kustības — &#10;tā var pārvietoties telpā trīs savstarpēji neatkarīgos virzienos (X, Y vai Z ass virzienos). &#10;Tādai molekulai jeb atomam ir trīs brīvības pakāpes. Iznāk, ka katrai kustības iespējai — &#10;vienai brīvības pakāpei — atbilst tieši 1/2kT liela vidējā kinētiskā enerģija.&#10;">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </TextArea>
+                  <ImageView fitHeight="136.0" fitWidth="400.0" layoutX="14.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/teorija2_4.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="251.0" fitWidth="350.0" layoutX="428.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/teorija4.png" />
+                     </image></ImageView>
+                  <Button fx:id="toFifthLpp" layoutX="650.0" layoutY="576.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Tālāk" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="backThirdLpp" layoutX="15.0" layoutY="576.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Atpakaļ" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="theoryPane3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F0F8FF;">
+               <children>
+                  <TextArea editable="false" layoutX="-3.0" layoutY="74.0" prefHeight="473.0" prefWidth="806.0" style="-fx-background-color: #F0F8FF; -fx-border-color: #F0F8FF; -fx-background-color: transparent;" text="Secinājumi: &#10;1)vienā un tajā pašā temperatūrā vieglākās molekulas kustas ātrāk &#10;nekā smagākās.&#10;2) Kinētiskā enerģija piemīt visām vielas daļiņām, &#10;kas atrodas siltum kustībā. &#10;Tad (Ek)=3/2 kT, kur Ek — gāzes molekulu vidējā   &#10;kinētiskā enerģija, J;&#10;k — Bolcmaņa konstante, k = 1,38∙ 10–23 J/K&#10;T — absolūtā temperatūra, K.&#10;&#10;&#10;&#10;">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </TextArea>
+                  <Button fx:id="toFourthLpp" layoutX="650.0" layoutY="576.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Tālāk" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="backSecondLpp" layoutX="15.0" layoutY="576.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Atpakaļ" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Line endX="5.0" layoutX="100.0" layoutY="257.0" startX="-35.0" strokeType="OUTSIDE" />
+                  <Line endX="-20.0" layoutX="287.0" layoutY="258.0" startX="-35.0" strokeType="OUTSIDE" />
+               </children></Pane>
+            <Pane fx:id="theoryPane2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F0F8FF;">
+               <children>
+                  <TextArea editable="false" layoutX="-3.0" prefHeight="620.0" prefWidth="806.0" style="-fx-background-color: #F0F8FF; -fx-border-color: #F0F8FF; -fx-background-color: transparent;" text="Tā kā kubam ir trīs pretēju skaldņu pāri, tad kubā esošās &#10;molekulas var kustēties trijos savstarpēji perpendikulāros virzienos. &#10;Tad ideālas gāzes spiediens uz trauka sienām ir&#10;p0=1/3 m_0 n(ϑ^2); n= N/V&#10;p — spiediens, Pa&#10;m0 — vienas molekulas masa, kg&#10;n — molekulu koncentrācija, m–3&#10;(ϑ^2) — molekulu ātrumu kvadrātu vidējā vērtība, (m/s)2&#10;vkv— vidējais kvadrātiskais ātrums, m/s&#10;N— daļiņu skaits&#10;V — tilpums, m3&#10;Gāzes molekulu ātrumu kvadrātu vidējā vērtība (ϑ2) &#10;ir tieši proporcionāla gāzes absolūtajai temperatūrai T&#10;(ϑ2)=3kT/m0.&#10;&#10;&#10;">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </TextArea>
+                  <Button fx:id="toThirdLpp" layoutX="650.0" layoutY="576.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Tālāk" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="backFIrstLpp" layoutX="15.0" layoutY="576.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Atpakaļ" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Line endX="27.0" layoutX="210.0" layoutY="113.0" startX="-35.0" strokeType="OUTSIDE" />
+                  <Line endX="27.0" layoutX="51.0" layoutY="253.0" startX="-35.0" strokeType="OUTSIDE" />
+                  <Line endX="10.0" layoutX="51.0" layoutY="465.0" startX="-35.0" strokeType="OUTSIDE" />
+                  <Line endX="25.0" layoutX="580.0" layoutY="393.0" startX="-25.0" strokeType="OUTSIDE" />
+               </children>
+            </Pane>
+            
+            <Pane fx:id="theoryPane1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F0F8FF;">
+               <children>
+                  <TextArea editable="false" layoutY="273.0" prefHeight="314.0" prefWidth="643.0" style="-fx-background-color: #F0F8FF; -fx-border-color: #F0F8FF; -fx-background-color: transparent;" text="Kā ideālas gāzes spiediens p ir atkarīgs &#10;no molekulu skaita N un kustības ātruma v? &#10;Pieņemsim, ka kuba šķautnes garums ir l, &#10;visu molekulu ātrumi ir vienādi un ka molekulas &#10;triecas pret kuba skaldnēm perpendikulāri virsmai. &#10;Ja katras molekulas masa ir m0 un tās ātrums v, &#10;tad molekulai piemīt impulss m0v. Molekulai elastīgi atsitoties &#10;no kuba skaldnes, tās impulss maina virzienu uz pretējo, &#10;un tātad tā lielums mainās par 2m0v.&#10;">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </TextArea>
+                  <ImageView fitHeight="259.0" fitWidth="453.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/teorija1.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="toSecondLpp" layoutX="650.0" layoutY="576.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Tālāk" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane fx:id="taskPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F0F8FF;">
+               <children>
+                  <Label layoutX="46.0" layoutY="7.0" prefHeight="59.0" prefWidth="708.0" text="DEFINĒJIET UZDĒVUMA NOTEIKUMU" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="checkC" layoutX="433.0" layoutY="395.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="5.0" />
+                  <CheckBox fx:id="checkD" layoutX="433.0" layoutY="501.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="9.0" />
+                  <CheckBox fx:id="checkA" layoutX="29.0" layoutY="395.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="9.0" />
+                  <CheckBox fx:id="checkB" layoutX="28.0" layoutY="501.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="9.0" />
+                  <Label layoutX="33.0" layoutY="373.0" text="A">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="479.0" text="B">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="434.0" layoutY="373.0" text="C">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="434.0" layoutY="479.0" text="D">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="newQuestion" disable="true" layoutX="627.0" layoutY="574.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="155.0" style="-fx-background-color: #28739e;" text="Pievienot Jautājumu" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="startTask" disable="true" layoutX="477.0" layoutY="574.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Sākt testu" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ready" layoutX="333.0" layoutY="574.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Gatavs" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="message" layoutX="26.0" layoutY="537.0" prefHeight="28.0" prefWidth="397.0" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="message2" layoutX="33.0" layoutY="565.0" prefHeight="28.0" prefWidth="275.0" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" layoutX="25.0" layoutY="285.0" prefHeight="36.0" prefWidth="313.0" text="DEFINĒJIET JAUTĀJUMUS" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="465.0" layoutY="285.0" prefHeight="36.0" prefWidth="313.0" text="ATZĪMĒJIET PAREIZOS" textAlignment="RIGHT">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="taskText" layoutX="20.0" layoutY="65.0" prefHeight="215.0" prefWidth="760.0" wrapText="true" />
+                  <TextArea fx:id="firstTask" layoutX="50.0" layoutY="356.0" prefHeight="60.0" prefWidth="324.0" wrapText="true" />
+                  <TextArea fx:id="secondTask" layoutX="50.0" layoutY="462.0" prefHeight="60.0" prefWidth="324.0" wrapText="true" />
+                  <TextArea fx:id="thirdTask" layoutX="454.0" layoutY="356.0" prefHeight="60.0" prefWidth="324.0" wrapText="true" />
+                  <TextArea fx:id="fourthTask" layoutX="454.0" layoutY="462.0" prefHeight="60.0" prefWidth="324.0" wrapText="true" />
+               </children></Pane>
+            <Pane fx:id="answerPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F0F8FF;">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="162.0" layoutY="7.0" prefHeight="59.0" prefWidth="477.0" text="UZDĒVUMA NOTEIKUMS" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="checkCAnswer" layoutX="433.0" layoutY="395.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="5.0" />
+                  <CheckBox fx:id="checkDAnswer" layoutX="433.0" layoutY="501.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="9.0" />
+                  <CheckBox fx:id="checkAAnswer" layoutX="29.0" layoutY="395.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="9.0" />
+                  <CheckBox fx:id="checkBAnswer" layoutX="28.0" layoutY="501.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="9.0" />
+                  <Label layoutX="33.0" layoutY="373.0" text="A">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="479.0" text="B">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="434.0" layoutY="373.0" text="C">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="434.0" layoutY="479.0" text="D">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="25.0" layoutY="285.0" prefHeight="36.0" prefWidth="341.0" text="ATBILDIET UZ JAUTĀJUMIEM" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     
+                  </Label>
+                  <Label alignment="CENTER" layoutX="465.0" layoutY="285.0" prefHeight="36.0" prefWidth="313.0" text="ATZĪMĒJIET PAREIZOS" textAlignment="RIGHT">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="nextQuestion" disable="true" layoutX="627.0" layoutY="574.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="155.0" style="-fx-background-color: #28739e;" text="Nākamais Jautājums" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="checkAnswer" layoutX="477.0" layoutY="574.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Pārbaudīt" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="AGreen" fitHeight="34.0" fitWidth="35.0" layoutX="47.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../resources/green_check.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="BGreen" fitHeight="34.0" fitWidth="35.0" layoutX="47.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../resources/green_check.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="CGreen" fitHeight="34.0" fitWidth="35.0" layoutX="739.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../resources/green_check.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="DGreen" fitHeight="34.0" fitWidth="35.0" layoutX="739.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../resources/green_check.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ARed" fitHeight="56.0" fitWidth="63.0" layoutX="82.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../resources/red_check.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="BRed" fitHeight="56.0" fitWidth="63.0" layoutX="82.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../resources/red_check.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="CRed" fitHeight="56.0" fitWidth="63.0" layoutX="683.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../resources/red_check.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="DRed" fitHeight="56.0" fitWidth="63.0" layoutX="683.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../resources/red_check.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="stopAnswer" layoutX="333.0" layoutY="574.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #28739e;" text="Beigt Testu" textFill="WHITE" visible="false">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color blue="0.40222951769828796" green="0.40222951769828796" red="0.40789473056793213" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="taskTextAnswer" editable="false" layoutX="20.0" layoutY="65.0" prefHeight="215.0" prefWidth="760.0" wrapText="true" />
+                  <TextArea fx:id="firstTaskAnswer" editable="false" layoutX="50.0" layoutY="356.0" prefHeight="60.0" prefWidth="324.0" wrapText="true" />
+                  <TextArea fx:id="secondTaskAnswer" editable="false" layoutX="50.0" layoutY="462.0" prefHeight="60.0" prefWidth="324.0" wrapText="true" />
+                  <TextArea fx:id="thirdTaskAnswer" editable="false" layoutX="454.0" layoutY="356.0" prefHeight="60.0" prefWidth="324.0" wrapText="true" />
+                  <TextArea fx:id="fourthTaskAnswer" editable="false" layoutX="454.0" layoutY="462.0" prefHeight="60.0" prefWidth="324.0" wrapText="true" />               </children>
+            </Pane>
+         
+                  <Pane fx:id="circlePane" prefHeight="620.0" prefWidth="800.0" style="-fx-background-color: radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 50.0% 50.0%, radius 50.0%, #3a94b5 0.0%, #974242 100.0%);">
+               <children>
+                  <Line endX="176.0" layoutX="452.0" layoutY="299.0" startX="-52.5" stroke="#aeaeae" />
+                  <Line endX="-65.0" endY="-10.5" layoutX="465.0" layoutY="309.0" startX="-65.0" startY="-196.0" stroke="#aeaeae" />
+                  <Line endX="-62.5" endY="-9.5" layoutX="462.0" layoutY="308.0" startX="-260.0" startY="140.0" stroke="#aeaeae" />
+                  <Label layoutX="220.0" layoutY="450.0" text="X" textFill="#d7d7d7">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="411.0" layoutY="104.0" text="Z" textFill="#d7d7d7">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="625.0" layoutY="274.0" text="Y" textFill="#d7d7d7">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Line endX="176.0" layoutX="224.0" layoutY="299.0" startX="-52.5" stroke="#aeaeae" style="-fx-stroke-dash-array: 10;" />
+                  <Line endX="-65.0" endY="-10.5" layoutX="465.0" layoutY="495.0" startX="-65.0" startY="-196.0" stroke="#aeaeae" style="-fx-stroke-dash-array: 10;" />
+                  <Line endX="-2.0" endY="-55.0" layoutX="606.0" layoutY="198.0" startX="-206.5" startY="101.0" stroke="#aeaeae" style="-fx-stroke-dash-array: 10;" />
+                  <ImageView fx:id="roundArrow1" fitHeight="45.0" fitWidth="38.0" layoutX="382.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../resources/20706.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="roundArrow2" fitHeight="45.0" fitWidth="38.0" layoutX="208.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true" rotate="45.0" visible="false">
+                     <image>
+                        <Image url="@../../resources/20706.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="roundArrow3" fitHeight="45.0" fitWidth="38.0" layoutX="577.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" visible="false">
+                     <image>
+                        <Image url="@../../resources/20706.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+             
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
